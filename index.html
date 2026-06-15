@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Erasmus Mundial - Küresel kültürleri bir araya getiren, dil miraslarını koruyan ve interaktif simülasyonlar sunan akademik tabanlı eğitim platformu.">
+  <meta name="keywords" content="erasmus mundial, yaşayan diller enstitüsü, büyük evrim oyunu, kültürel miras, dil eğitimi, statik site">
+  <meta name="author" content="Erasmus Mundial">
+  <title>Erasmus Mundial | Küresel Eğitim ve Kültürel Keşif Platformu</title>
+  
+  <!-- System Fonts stylesheets are not required, we use system-ui stack directly in style.css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="container header-container">
+      <a href="./index.html" class="logo-link" id="nav-logo">
+        <h1 class="logo-text">Erasmus <span>Mundial</span></h1>
+      </a>
+      
+      <button class="hamburger" id="hamburger" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="./index.html" class="nav-link" id="link-home">Ana Sayfa</a></li>
+        <li><a href="./livinglanguages/index.html" class="nav-link" id="link-livinglanguages">Yaşayan Diller</a></li>
+        <li><a href="./evolution/index.html" class="nav-link" id="link-evolution">Büyük Evrim Oyunu</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero fade-in" id="hero-section">
+      <div class="container hero-content">
+        <span class="badge badge-accent">Akademik & Küresel</span>
+        <h1>Geleceğin Eğitimini <span>Tarih ve Dillerle</span> Keşfedin</h1>
+        <p>Erasmus Mundial, dünya kültürlerini yakınlaştıran, dillerin eşsiz mirasını koruyan ve interaktif simülasyonlar ile medeniyet tarihini geleceğe taşıyan öncü bir oluşumdur.</p>
+        <div class="btn-group">
+          <a href="#initiatives" class="btn btn-primary" id="btn-explore">Girişimlerimizi Keşfedin</a>
+          <a href="#about" class="btn btn-secondary" id="btn-learn-more">Hakkımızda</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section container fade-in" id="about">
+      <div class="content-wrapper">
+        <h2 class="section-title" id="about-title">Erasmus Mundial Nedir?</h2>
+        <div class="content-block">
+          <p><strong>Erasmus Mundial</strong>, insanlığın ortak mirası olan dillerin, kültürlerin ve tarihsel süreçlerin korunmasını ve öğretilmesini hedefleyen bağımsız bir akademik platformdur. Küreselleşen dünyada yerel değerlerin kaybolmasını önlemek amacıyla araştırma projeleri yürütür ve modern öğrenme tekniklerini benimseriz.</p>
+          <p>Misyonumuz, dünyanın dört bir yanındaki araştırmacıları, öğrencileri ve dil meraklılarını bir araya getirerek bilgi paylaşımını teşvik etmek; bilimi ve kültürü herkes için erişilebilir kılmaktır.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Initiatives Section -->
+    <section class="section section-dark fade-in" id="initiatives">
+      <div class="container">
+        <h2 class="section-title" id="initiatives-title">Başlıca Projelerimiz</h2>
+        
+        <div class="grid grid-2">
+          <!-- Card 1: Living Languages -->
+          <div class="card" id="card-livinglanguages">
+            <span class="badge">Araştırma & Arşivleme</span>
+            <h3 class="card-title">Yaşayan Diller Enstitüsü</h3>
+            <p class="card-desc">Dünya üzerindeki tehlike altındaki dilleri belgeliyor, konuşurlarını destekliyor ve gelecek nesillere aktarılması için dijital veri tabanları oluşturuyoruz.</p>
+            <a href="./livinglanguages/index.html" class="card-link" id="card-link-languages">
+              Enstitüyü Ziyaret Edin <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Card 2: Evolution Game -->
+          <div class="card" id="card-evolution">
+            <span class="badge">Simülasyon & Eğitim</span>
+            <h3 class="card-title">Büyük Evrim Oyunu</h3>
+            <p class="card-desc">İnsanlığın kültürel, sosyal ve dilbilimsel evrimini etkileşimli bir simülasyon oyunuyla deneyimleyin. Tarihi kararlarla medeniyetlerin kaderini şekillendirin.</p>
+            <a href="./evolution/index.html" class="card-link" id="card-link-evolution">
+              Oyunu Keşfedin <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section container fade-in" id="newsletter">
+      <div class="content-wrapper">
+        <div class="content-block" style="text-align: center;">
+          <h3 id="newsletter-title" style="border: none; margin-bottom: 0.5rem;">Gelişmelerden Haberdar Olun</h3>
+          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 2rem;">Akademik çalışmalarımız, yeni yayınlanan dil arşivlerimiz ve etkinliklerimiz hakkında bilgi almak için bültenimize katılın.</p>
+          
+          <form class="static-form" id="newsletter-form">
+            <div class="grid grid-2" style="margin-bottom: 1rem; gap: 1rem;">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="name" class="form-label">Adınız Soyadınız</label>
+                <input type="text" id="name" class="form-control" placeholder="Örn. Ahmet Yılmaz" required>
+              </div>
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="email" class="form-label">E-Posta Adresiniz</label>
+                <input type="email" id="email" class="form-control" placeholder="ahmet@example.com" required>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit-newsletter">Bültene Kaydol</button>
+            <div class="success-message" id="newsletter-success">
+              Teşekkürler! Bülten kaydınız başarıyla alındı.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand" id="footer-brand-section">
+          <h4>Erasmus <span>Mundial</span></h4>
+          <p>Kültürel çeşitliliği koruma, akademik iş birliği ve yeni nesil interaktif eğitim modeli ile küresel bir vizyon.</p>
+        </div>
+        
+        <div class="footer-links" id="footer-navigation">
+          <h5>Hızlı Bağlantılar</h5>
+          <ul>
+            <li><a href="./index.html">Ana Sayfa</a></li>
+            <li><a href="./livinglanguages/index.html">Yaşayan Diller</a></li>
+            <li><a href="./evolution/index.html">Büyük Evrim Oyunu</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links" id="footer-contact">
+          <h5>İletişim</h5>
+          <ul>
+            <li><a href="mailto:info@erasmusmundial.org" target="_blank" rel="noopener noreferrer">info@erasmusmundial.org</a></li>
+            <li><span style="font-size: 0.9rem; opacity: 0.8;">Madrid / Brüksel / İstanbul</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom" id="footer-copyright">
+        <p>&copy; 2026 Erasmus Mundial. Tüm hakları saklıdır. Akademik amaçlarla hazırlanmıştır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
